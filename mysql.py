@@ -31,7 +31,7 @@ class Demo(QWidget):
         #             "(id INT(11) PRIMARY KEY, class VARCHAR(4) NOT NULL, "
         #             "name VARCHAR(25) NOT NULL, scddddore FLOAT)")
 
-        query.exec_("INSERT INTO students (id, class, name, score) "          # 3
+        query.exec_("INSERT INTO students (id, class, name, score) "         
                     "VALUES (1221212, '0104', 'Louis', 59.5)")
         query.exec_("INSERT INTO students (id, class, name, score) "
                     "VALUES (122323, '0116', 'Chxxxris', 99.5)")

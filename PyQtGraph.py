@@ -35,10 +35,11 @@ class Demo(QWidget):
         self.setLayout(self.v_layout)
 
     def plot_slot(self):
+        # 生成1000个服从正态分布的随机数
         x = np.random.normal(size=1000)
+        # 生成1000个服从正态分布的随机数
         y = np.random.normal(size=1000)
-        print('x', x)   
-        print('y', y)
+ 
         r_symbol = random.choice(['o', 's', 't', 't1', 't2', 't3', 'd', '+', 'x', 'p', 'h', 'star'])
         r_color = random.choice(['b', 'g', 'r', 'c', 'm', 'y', 'k', 'd', 'l', 's'])
         self.plot_data.setData(x, y, pen=None, symbol=r_symbol, symbolBrush=r_color)

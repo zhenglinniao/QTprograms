@@ -58,6 +58,10 @@ class Demo(QTableView):
 
         model.submitAll()
 
+        #过滤操作
+        model.setFilter('score > 60')
+        model.select()
+
         self.setModel(model)
 
         for i in range(model.rowCount()):               # 3

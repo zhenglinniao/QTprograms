@@ -6,7 +6,7 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     widget = QWidget()
     widget.resize(200, 200)                    # 1
-    widget.move(100, 100)                      # 2
+    widget.move(100, 100)                      # 2通过move(100, 100)方法将窗口移到屏幕坐标为(100, 100)的位置上；
     # widget.setGeometry(100, 100, 200, 200)   # 3
     widget.show()
 

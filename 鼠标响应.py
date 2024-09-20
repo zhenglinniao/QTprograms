@@ -21,7 +21,7 @@ class Demo(QWidget):
         self.setLayout(self.v_layout)
 
         self.resize(300, 300)                                          
-        # self.setMouseTracking(True)                                        # 4
+        self.setMouseTracking(True)                                        # 4
 
     def mouseMoveEvent(self, QMouseEvent):                                 # 5
         x = QMouseEvent.x()
